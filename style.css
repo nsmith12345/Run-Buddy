@@ -147,6 +147,14 @@ section {
   color: #fce138;
 }
 
+.hero-cta, .hero-form {
+  width: 100%;
+}
+
+.hero-cta {
+  text-align: center;
+}
+
 .intro {
 }
 
