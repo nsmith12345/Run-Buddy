@@ -56,9 +56,6 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li {
-}
-
 header nav ul li a {
   /* and here */
   padding: 10px 15px;
@@ -177,6 +174,7 @@ section {
   color: #fff;
   font-size: 18px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .hero-cta h2 {
@@ -190,24 +188,14 @@ section {
   width: 100%;
 }
 
-.hero-cta {
-  text-align: center;
-}
-
-.intro {
-}
-
-.intro p {
-  line-height: 1.7;
-  color: #39a6b2;
-  width: 80%;
-  font-size: 20px;
-}
-
 .intro p {
   /* add this alongside your other declarations */
   text-align: center;
   margin: 0 auto;
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  font-size: 20px;
 }
 
 .checkbox-wrapper input, .radio-wrapper input {
@@ -268,6 +256,25 @@ checkbox-wrapper label, .radio-wrapper label {
   content: "";
 }
 
+div {
+  --favorite-color: blue;
+  color: var(--favorite-color);
+  box-shadow: 5px 5px 10px var(--favorite-color);
+}
+
+div {
+  --size-small: 12px;
+  --size-big: 50px;
+  font-size: var(--size-small);
+  margin: var(--size-big) var(--size-small);
+}
+
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
 .steps {
   background: #fce138;
 }
@@ -284,9 +291,6 @@ checkbox-wrapper label, .radio-wrapper label {
 
 .secondary-border {
   border-color: #39a6b2;
-}
-
-.steps div {
 }
 
 .step-img {
